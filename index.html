@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    
+    <title>Omar Caiguan - Mi Sitio  Web</title>
 </head>
 <body>
-    <h1>Proyecto M1</h1>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <h1 class="header__title">Omar Caiguan</h1>
+        <h2 class="header__subtitle">Mi Página Web</h2>
+    </header>
+    
+    <main>
+
+        <!-- Sección de descripción personal -->
+        <section class="about">
+            <h2 class="about__title">¿Quién Soy?</h2>
+            <p class="about__description">Mi nombre es Omar Leonardo Caiguan Ojeda, tengo 37 años. Nací el 25 de mayo de 1987 en la ciudad de Bahía Blanca, provincia de Buenos Aires, Argentina. Soy egresado del colegio Técnico La Piedad en el año 2004 con el título de Técnico en Informática. Actualmente me encuentro viviendo en la ciudad de Entre Lagos, al sur de Chile hace ya 10 años. Curso la carrera tecnológica de Desarrollador Web Full Stack en el bootcamp 'Soy Henry'.</p>
+        </section>
+
+        <!-- Sección de tecnologías favoritas -->
+        <section class="technologies">
+            <h2 class="technologies__title">Mis Tres Tecnologías Favoritas</h2>
+            <div class="technologies__list">
+                <div class="technology">
+                    <img src="assets/images/html.png" alt="HTML Logo" class="technology__image">
+                    <h3 class="technology__name">HTML</h3>
+                </div>
+                <div class="technology">
+                    <img src="assets/images/css.png" alt="CSS Logo" class="technology__image">
+                    <h3 class="technology__name">CSS</h3>
+                </div>
+                <div class="technology">
+                    <img src="assets/images/js.png" alt="JavaScript Logo" class="technology__image">
+                    <h3 class="technology__name">JavaScript</h3>
+                </div>
+            </div>
+        </section>
+
+            <!-- Sección de formulario de actividades -->
+        <section class="activities">
+            <h3 class="activities__title">Mis Actividades Favoritas</h3>
+            <form class="activities__form" id="formActividades">
+                <label for="titulo" class="activities__label">Título de la actividad:</label>
+                <input type="text" id="titulo" class="activities__input activities__input--text">
+
+                <label for="descripcion" class="activities__label">Descripción de la actividad:</label>
+                <textarea id="descripcion" class="activities__textarea"></textarea>
+
+                <label for="imagen" class="activities__label">URL de la imagen:</label>
+                <input type="url" id="imagen" class="activities__input activities__input--url">
+
+                <button type="button" class="activities__button" id="agregarActividad">Agregar Actividad</button>
+            </form>
+
+            <!-- Contenedor para mostrar las actividades agregadas -->
+            <div class="activities__list" id="listaActividades"></div>
+        </section>
+
+        <script src="scripts/index.js"></script>
+
+    </main>
+    
 </body>
 </html>
