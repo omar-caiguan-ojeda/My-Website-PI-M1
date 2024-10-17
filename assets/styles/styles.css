@@ -131,6 +131,10 @@ h1, h2, h3 {
 
 .activities__list {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: flex-start;
 }
 
 .activities__item {
@@ -152,15 +156,16 @@ h1, h2, h3 {
     margin: 10px;
     text-align: center;
     width: 200px;
+    height: 250px;
 }
 
 .activity-card__title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .activity-card__description {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .activity-card__image {
